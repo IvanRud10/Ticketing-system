@@ -1,0 +1,23 @@
+﻿<Window x:Class="AirTicket.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirTicket"
+        mc:Ignorable="d"
+        Title="LogIn" Height="450" Width="300">
+    <Grid Background="#FFC3C3C3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Log In" HorizontalAlignment="Left" Margin="85,241,0,0" VerticalAlignment="Top" Width="130" Click="LogIn_Click" Height="44" Grid.ColumnSpan="2"/>
+        <Button Content="Registration" HorizontalAlignment="Left" Margin="85,290,0,0" VerticalAlignment="Top" Width="130" Click="Reg_Click" Height="24" Grid.ColumnSpan="2"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="60,43,0,0" VerticalAlignment="Top" Width="176" HorizontalContentAlignment="Center" Height="34" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="61,84,0,0" TextWrapping="Wrap" Text="" x:Name="Login" VerticalAlignment="Top" Width="176" FontSize="18" Grid.ColumnSpan="2"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="60,134,0,0" VerticalAlignment="Top" Width="176" HorizontalContentAlignment="Center" Height="35" Grid.ColumnSpan="2" />
+        <PasswordBox HorizontalAlignment="Left" Margin="60,174,0,0" VerticalAlignment="Top" Width="176" x:Name="Password" Height="30" FontSize="18" Grid.ColumnSpan="2"/>
+        <Button Content="See information about ticket" HorizontalAlignment="Left" Margin="61,319,0,0" VerticalAlignment="Top" Width="176" Click="Info_Click" Height="24" Grid.ColumnSpan="2"/>
+        <Button Content="Payment" HorizontalAlignment="Left" Margin="61,348,0,0" VerticalAlignment="Top" Width="175" Click="Pay_Click" Height="24" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

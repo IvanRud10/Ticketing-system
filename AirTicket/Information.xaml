@@ -1,0 +1,32 @@
+﻿<Window x:Class="AirTicket.Information"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirTicket"
+        mc:Ignorable="d"
+        Title="LogIn" Height="450" Width="590">
+    <Grid Background="#FFC3C3C3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid HorizontalAlignment="Left" Height="182" Margin="60,130,0,0" Name="g1" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2"  SelectionChanged="DataGrid_SelectionChanged" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Login" Width="40" Binding="{Binding Login}"/>
+                <DataGridTextColumn Header="Ticket_ID" Width="56" Binding="{Binding Ticket_ID}"/>
+                <DataGridTextColumn Header="From" Width="70" Binding="{Binding PlaceFrom}"/>
+                <DataGridTextColumn Header="To" Width="70" Binding="{Binding PlaceTo}"/>
+                <DataGridTextColumn Header="Class" Width="70" Binding="{Binding Class}"/>
+                <DataGridTextColumn Header="Price $" Width="60" Binding="{Binding Price}"/>
+                <DataGridTextColumn Header="Date" Width="80" Binding="{Binding Dates}"/>
+                <DataGridTextColumn Header="Paid" Width="90" Binding="{Binding Paid}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="60,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Name="Ticket" FontSize="14"/>
+        <Label Content="Select your Ticket ID" HorizontalAlignment="Left" Margin="61,26,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="41" Width="176" FontSize="16"/>
+        <Button Content="Search" Grid.Column="1" HorizontalAlignment="Left" Margin="33.6,72,0,0" VerticalAlignment="Top" Click="Search_click" Width="101" Height="35" FontSize="14"/>
+        <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="180.6,72,0,0" VerticalAlignment="Top" Click="Back_click" Width="101" Height="35" FontSize="14"/>
+        <Button Content="Exit" Grid.Column="1" HorizontalAlignment="Left" Margin="232.6,353,0,0" VerticalAlignment="Top" Click="Exit_click" Width="101" Height="35" FontSize="14"/>
+    </Grid>
+</Window>
