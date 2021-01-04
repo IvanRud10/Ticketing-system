@@ -48,14 +48,6 @@ namespace AirTicket
                 }
             }
         }
-       
-      /**  public void sendToServer(string msg)
-        {
-            byte[] data = new byte[128];
-            data = Encoding.Unicode.GetBytes(msg);
-            stream.Write(data, 0, data.Length);
-        }
-      **/
    
     }
 }
