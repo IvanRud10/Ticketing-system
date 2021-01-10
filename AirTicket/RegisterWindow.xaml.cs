@@ -18,12 +18,9 @@ using System.Text.RegularExpressions;
 
 namespace AirTicket
 {
-    /// <summary>
-    /// Логика взаимодействия для RegisterWindow.xaml
-    /// </summary>
     public partial class RegisterWindow : Window
     {
-        static int port = 8005; // порт сервера
+        static int port = 8005; // port of server
         static string server_ip = "127.0.0.1";
         string mailPattern = @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
         string loginPattern = @"^[a-zA-Z0-9_]+$";
