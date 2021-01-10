@@ -16,12 +16,9 @@ using System.Net.Sockets;
 
 namespace AirTicket
 {
-    /// <summary>
-    /// Логика взаимодействия для ShowInformation.xaml
-    /// </summary>
     public partial class Payment : Window
     {
-        static int port = 8005; // порт сервера
+        static int port = 8005; // port of server
         static string server_ip = "127.0.0.1";
         public Payment()
         {
