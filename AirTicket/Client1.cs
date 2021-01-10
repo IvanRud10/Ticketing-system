@@ -11,20 +11,7 @@ namespace AirTicket
 {
     public class Client
     {
-        /**public Client(string firstName, string lastName, string email, string login, string password)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Email = email;
-            Login = login;
-            Password = password;
-        }
        
-        public Client()
-        {
-
-        }
-        **/
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
