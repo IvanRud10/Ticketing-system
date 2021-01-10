@@ -20,9 +20,6 @@ using System.Net.Sockets;
 
 namespace AirTicket
 {
-    /// <summary>
-    /// Логика взаимодействия для Information.xaml
-    /// </summary>
     public partial class Information : Window
     {
         static int port = 8005; // порт сервера
@@ -30,7 +27,6 @@ namespace AirTicket
         public Information()
         {
             InitializeComponent();
-            //binddatagrid(Ticket_ID);
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -39,7 +35,6 @@ namespace AirTicket
         private void Search_click(object sender, RoutedEventArgs e)
         {
             binddatagrid(Ticket.Text);
-            //Ticket.Text = "";
             string textToSend = "info" + "%1" + Ticket.Text.ToString() + "%2";
             TcpClient client = new TcpClient(server_ip, port);
             NetworkStream stream = client.GetStream();
