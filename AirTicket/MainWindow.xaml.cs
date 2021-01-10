@@ -11,16 +11,13 @@ using System.Data;
 
 namespace AirTicket
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
-        static int port = 8005; // порт сервера
+        static int port = 8005; // port of server
         static string server_ip = "127.0.0.1";
         private void LogIn_Click(object sender, RoutedEventArgs e)
         {
